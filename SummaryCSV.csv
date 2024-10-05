@@ -1,0 +1,37 @@
+Architecture,Model Name,Epochs,Batch Size,Sample Frame,Model Parameters,Training Accuracy,Validation Accuracy,Notes
+Conv3D ,model_arch1_conv3D_1,20,64,30,"Total params: 1,933,765 (7.38 MB)
+ Trainable params: 1,932,517 (7.37 MB)
+ Non-trainable params: 1,248 (4.88 KB)",100,19,
+Conv3D ,model_arch1_conv3D_2,20,32,20,"Total params: 1,933,765 (7.38 MB)
+ Trainable params: 1,932,517 (7.37 MB)
+ Non-trainable params: 1,248 (4.88 KB)",99,33,
+Conv3D ,model_arch1_conv3D_3,20,8,20," Total params: 1,933,765 (7.38 MB)
+ Trainable params: 1,932,517 (7.37 MB)
+ Non-trainable params: 1,248 (4.88 KB)",93,84,
+Conv3D ,model_arch1_conv3D_4,20,16,20,"Total params: 4,446,853 (16.96 MB)
+ Trainable params: 4,444,869 (16.96 MB)
+ Non-trainable params: 1,984 (7.75 KB)",91,88,
+CNN + RNN with LTSM,model_arch2_cnn_rnn_1,20,64,30,"Total params: 1,052,773 (4.02 MB)
+ Trainable params: 1,051,013 (4.01 MB)
+ Non-trainable params: 1,760 (6.88 KB)",,,##### OOM Error got triggered as GPU is running out of memory.
+CNN + RNN with LTSM,model_arch2_cnn_rnn_2,20,16,30,"Total params: 1,052,773 (4.02 MB)
+ Trainable params: 1,051,013 (4.01 MB)
+ Non-trainable params: 1,760 (6.88 KB)",91,71,
+CNN + RNN with LTSM,model_arch2_cnn_rnn_3,20,16,20,"Total params: 1,052,773 (4.02 MB)
+ Trainable params: 1,051,013 (4.01 MB)
+ Non-trainable params: 1,760 (6.88 KB)",66,60,
+CNN + RNN with GRU,model_arch2_cnn_rnn_4,20,16,20,"Total params: 901,349 (3.44 MB)
+ Trainable params: 899,589 (3.43 MB)
+ Non-trainable params: 1,760 (6.88 KB)",88,77,
+Transfer Learning using MobileNet + LTSM + Training of Internal layers set to False,model_arch2_cnn_rnn_trslrn_1,20,16,20,"Total params: 3,529,669 (13.46 MB)
+ Trainable params: 298,757 (1.14 MB)
+ Non-trainable params: 3,230,912 (12.32 MB)",99,79,
+Transfer Learning using MobileNet + LTSM + Training of Internal layers set to True,model_arch2_cnn_rnn_trslrn_2,20,16,20,"Total params: 3,529,669 (13.46 MB)
+ Trainable params: 3,505,733 (13.37 MB)
+ Non-trainable params: 23,936 (93.50 KB)",97,94,
+Transfer Learning using MobileNet + GRU + Training of Internal layers set to False,model_arch2_cnn_rnn_trslrn_3,20,16,20,"Total params: 3,460,165 (13.20 MB)
+ Trainable params: 229,253 (895.52 KB)
+ Non-trainable params: 3,230,912 (12.32 MB)",99,71,
+Transfer Learning using MobileNet + GRU + Training of Internal layers set to True,model_arch2_cnn_rnn_trslrn_4,20,16,20,"Total params: 3,460,165 (13.20 MB)
+ Trainable params: 3,436,229 (13.11 MB)
+ Non-trainable params: 23,936 (93.50 KB)",99,93,Based on the scores choosen this model
